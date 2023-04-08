@@ -59,7 +59,7 @@ app.post("/failure", function (req, res) {
   res.redirect("/");
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function () {
   console.log(`Server is running ${PORT} port`);
